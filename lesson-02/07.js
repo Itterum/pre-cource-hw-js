@@ -7,14 +7,14 @@ let passportMarried = {
     },
 };
 
-
 let passportMarried2 = {
     ...passportMarried,
-    married: true, // Добавляем поле married
     address: {
-        ...passportMarried.address, // Копируем объект address
+        ...passportMarried.address,
     },
 };
+
+passportMarried2.married = true;
 
 console.log(passportMarried);
 console.log(passportMarried2);
