@@ -8,16 +8,7 @@ let passportMarried = {
 };
 
 
-let passportMarried2 = {};
-let newField = {married: true};
-
-Object.entries(passportMarried).forEach(([key, value]) => {
-    passportMarried2[key] = value;
-
-    if (key === 'surname') {
-        passportMarried2 = {...passportMarried2, ...newField};
-    }
-});
+let passportMarried2 = {married: true, ...passportMarried};
 
 console.log(passportMarried);
 console.log(passportMarried2);
