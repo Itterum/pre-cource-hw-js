@@ -8,5 +8,5 @@ Object.assign(passport_copy, passport);
 
 passport_copy.name = 'Ivan';
 
-console.log(passport);
-console.log(passport_copy);
+console.log(passport.name);
+console.log(passport_copy.name);
