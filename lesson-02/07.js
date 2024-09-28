@@ -9,10 +9,11 @@ let passportMarried = {
 
 
 let passportMarried2 = {
-    name: passportMarried.name,
-    surname: passportMarried.surname,
-    married: true,
-    address: {...passportMarried.address},
+    ...passportMarried,
+    married: true, // Добавляем поле married
+    address: {
+        ...passportMarried.address, // Копируем объект address
+    },
 };
 
 console.log(passportMarried);
